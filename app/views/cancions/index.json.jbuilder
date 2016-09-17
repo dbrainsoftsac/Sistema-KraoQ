@@ -1,0 +1,1 @@
+json.array! @cancions, partial: 'cancions/cancion', as: :cancion

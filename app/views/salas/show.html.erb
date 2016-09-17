@@ -1,0 +1,26 @@
+<div class="page-header">
+  <%= link_to salas_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Regresar
+  <% end %>
+  <%= link_to edit_sala_path(@sala), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Editar
+  <% end %>
+  <h1>Ver sala</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Local:</dt>
+  <dd><%= @sala.Local %></dd>
+
+  <dt>Nombre sala:</dt>
+  <dd><%= @sala.no_sala %></dd>
+
+  <dt>Capacidad:</dt>
+  <dd><%= @sala.qt_capacidad %></dd>
+
+  <dt>Descripcion:</dt>
+  <dd><%= @sala.tx_sala_descripcion %></dd>
+
+</dl>

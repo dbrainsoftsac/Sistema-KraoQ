@@ -45,4 +45,6 @@ group :development do
   gem 'spring'
 end
 
+gem 'bootstrap-generators', '~> 3.3.4'
+gem 'annotate', '~> 2.7', '>= 2.7.1'
 

@@ -1,0 +1,97 @@
+<html>
+  <header>
+    <title>KraoQ</title>
+  </header>
+<body>
+ 
+<div class="container">
+  
+<div class="row">
+  
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-10">
+          <img src="https://dl.dropboxusercontent.com/u/56023444/karaoke/karaoke-160752_640.png">
+        </div>
+         <div class="col-md-2">
+           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Iniciar Sesión</button>
+         </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-10">
+          <p>Creado por D-BrainSoft</p>
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Unase a nuestra red</h4>
+      </div>
+      
+      <div class="modal-body"> 
+        <div class="row">
+          
+        <div class="col-md-12">
+        <div class="row">
+        <div class="col-md-6">
+        <h3>Iniciar sesión con:</h3>
+        <%= link_to new_local_path, class: 'btn btn-info' do %>
+        <span class="glyphicon glyphicon glyphicon-heart-empty"></span>
+        Conectar con Twitter
+        <% end %>
+        <p></p>
+        <p></p>
+        <%= link_to new_local_path, class: 'btn btn-primary' do %>
+        <span class="glyphicon glyphicon glyphicon-thumbs-up"></span>
+        Conectar con Facebook
+        <% end %>
+        <p></p>
+        <p></p>
+        <%= link_to new_local_path, class: 'btn btn-danger' do %>
+        <span class="glyphicon glyphicon-plus"></span>
+        Conectar con Google
+        <% end %>
+        </div>
+        <div class="col-md-6">
+        <h3>O Registrese:</h3>
+        <%= link_to new_local_path, class: 'btn btn-default' do %>
+        <span class="glyphicon glyphicon glyphicon-envelope"></span>
+        No uso redes sociales
+        <% end %>
+        </div>
+        </div>
+        
+        </div>
+      
+        </div>
+      </div>
+          
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+</div>
+
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted">Todos los derechos reservados.</p>
+      </div>
+</footer>
+    
+ </body>
+<html>

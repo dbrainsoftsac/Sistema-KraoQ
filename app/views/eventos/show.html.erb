@@ -1,0 +1,29 @@
+<div class="page-header">
+  <%= link_to eventos_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_evento_path(@evento), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show evento</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>No evento:</dt>
+  <dd><%= @evento.no_evento %></dd>
+
+  <dt>Local:</dt>
+  <dd><%= @evento.Local %></dd>
+
+  <dt>Fe fecha evento:</dt>
+  <dd><%= @evento.fe_fecha_evento %></dd>
+
+  <dt>Qt capacidad:</dt>
+  <dd><%= @evento.qt_capacidad %></dd>
+
+  <dt>Tx descripcion evento:</dt>
+  <dd><%= @evento.tx_descripcion_evento %></dd>
+
+</dl>

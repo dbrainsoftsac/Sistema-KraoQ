@@ -1,0 +1,38 @@
+<div class="page-header">
+  <%= link_to locals_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Volver
+  <% end %>
+  <%= link_to edit_local_path(@local), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Editar
+  <% end %>
+  
+    <%= link_to new_local_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    Nuevo
+  <% end %>
+  
+  <h1>Show local</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Nombre local:</dt>
+  <dd><%= @local.no_local %></dd>
+
+  <dt>Direccion:</dt>
+  <dd><%= @local.tx_direccion %></dd>
+
+  <dt>Telefono:</dt>
+  <dd><%= @local.tx_telefono %></dd>
+
+  <dt>Correo:</dt>
+  <dd><%= @local.tx_correo %></dd>
+
+  <dt>Descripcion:</dt>
+  <dd><%= @local.tx_descripcion %></dd>
+
+  <dt>Cod administrador:</dt>
+  <dd><%= @local.co_administrador %></dd>
+
+</dl>

@@ -1,0 +1,26 @@
+<div class="page-header">
+  <%= link_to cancions_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Volver
+  <% end %>
+  <%= link_to edit_cancion_path(@cancion), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Editar
+  <% end %>
+  
+  <%= link_to new_cancion_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    Nuevo
+  <% end %>
+  
+  <h1>Show cancion</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Canción:</dt>
+  <dd><%= @cancion.no_cancion %></dd>
+
+  <dt>Artista:</dt>
+  <dd><%= @cancion.no_artista_cancion %></dd>
+
+</dl>
