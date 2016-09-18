@@ -2,7 +2,7 @@
 <<<<<<< HEAD
 
 =======
-HOLA MUNDO
+HEllo gente
 >>>>>>> a9314debff07de956e1e7e55a013eff660a8d229
 This README would normally document whatever steps are necessary to get the
 application up and running.
