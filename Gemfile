@@ -45,6 +45,17 @@ group :development do
   gem 'spring'
 end
 
-gem 'bootstrap-generators', '~> 3.3.4'
-gem 'annotate', '~> 2.7', '>= 2.7.1'
 
+
+
+
+# Bootstrap Frontend Framework Support 
+  gem 'therubyracer'
+
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails', '>= 3.2.0', '< 3.2.2'
+  
+  # Simplified Form Management Support
+  gem 'simple_form'
+  
+  

@@ -1,13 +1,6 @@
-<div class="page-header">
-  <%= link_to tipo_productos_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Back
-  <% end %>
-  <%= link_to @tipo_producto, class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-info-sign"></span>
-    Show
-  <% end %>
-  <h1>Editing tipo_producto</h1>
-</div>
+<h1>Editing Tipo Producto</h1>
 
 <%= render 'form' %>
+
+<%= link_to 'Show', @tipo_producto %> |
+<%= link_to 'Back', tipo_productos_path %>

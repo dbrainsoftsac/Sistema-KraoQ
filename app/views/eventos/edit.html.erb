@@ -1,13 +1,6 @@
-<div class="page-header">
-  <%= link_to eventos_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Back
-  <% end %>
-  <%= link_to @evento, class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-info-sign"></span>
-    Show
-  <% end %>
-  <h1>Editing evento</h1>
-</div>
+<h1>Editing Evento</h1>
 
 <%= render 'form' %>
+
+<%= link_to 'Show', @evento %> |
+<%= link_to 'Back', eventos_path %>

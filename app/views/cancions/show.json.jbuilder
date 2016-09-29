@@ -1,1 +1,0 @@
-json.partial! "cancions/cancion", cancion: @cancion

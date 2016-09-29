@@ -1,13 +1,6 @@
-<div class="page-header">
-  <%= link_to salas_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Back
-  <% end %>
-  <%= link_to @sala, class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-info-sign"></span>
-    Show
-  <% end %>
-  <h1>Editando sala</h1>
-</div>
+<h1>Editing Sala</h1>
 
 <%= render 'form' %>
+
+<%= link_to 'Show', @sala %> |
+<%= link_to 'Back', salas_path %>

@@ -1,29 +1,29 @@
-<div class="page-header">
-  <%= link_to eventos_path, class: 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Back
-  <% end %>
-  <%= link_to edit_evento_path(@evento), class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-pencil"></span>
-    Edit
-  <% end %>
-  <h1>Show evento</h1>
-</div>
+<p id="notice"><%= notice %></p>
 
-<dl class="dl-horizontal">
-  <dt>No evento:</dt>
-  <dd><%= @evento.no_evento %></dd>
+<p>
+  <strong>No evento:</strong>
+  <%= @evento.no_evento %>
+</p>
 
-  <dt>Local:</dt>
-  <dd><%= @evento.Local %></dd>
+<p>
+  <strong>Local:</strong>
+  <%= @evento.Local %>
+</p>
 
-  <dt>Fe fecha evento:</dt>
-  <dd><%= @evento.fe_fecha_evento %></dd>
+<p>
+  <strong>Fe fecha evento:</strong>
+  <%= @evento.fe_fecha_evento %>
+</p>
 
-  <dt>Qt capacidad:</dt>
-  <dd><%= @evento.qt_capacidad %></dd>
+<p>
+  <strong>Qt capacidad:</strong>
+  <%= @evento.qt_capacidad %>
+</p>
 
-  <dt>Tx descripcion evento:</dt>
-  <dd><%= @evento.tx_descripcion_evento %></dd>
+<p>
+  <strong>Tx descripcion evento:</strong>
+  <%= @evento.tx_descripcion_evento %>
+</p>
 
-</dl>
+<%= link_to 'Edit', edit_evento_path(@evento) %> |
+<%= link_to 'Back', eventos_path %>
