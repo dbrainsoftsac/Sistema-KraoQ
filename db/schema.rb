@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160929033132) do
+ActiveRecord::Schema.define(version: 20160929122829) do
 
   create_table "artista", force: :cascade do |t|
     t.string   "no_artista"
@@ -90,11 +90,14 @@ ActiveRecord::Schema.define(version: 20160929033132) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
-    t.decimal  "price",      precision: 12, scale: 3
+    t.decimal  "price",            precision: 12, scale: 3
     t.boolean  "active"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
+    t.integer  "tipoproductos_id"
   end
+
+  add_index "products", ["tipoproductos_id"], name: "index_products_on_tipoproductos_id"
 
   create_table "salas", force: :cascade do |t|
     t.integer  "Local_id"
@@ -127,5 +130,18 @@ ActiveRecord::Schema.define(version: 20160929033132) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+
+  create_table "usuarios", force: :cascade do |t|
+    t.text     "no_usuario"
+    t.integer  "TipoUsuario_id"
+    t.text     "no_apellido_paterno"
+    t.text     "no_apellido_materno"
+    t.string   "no_dni"
+    t.string   "email"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  add_index "usuarios", ["TipoUsuario_id"], name: "index_usuarios_on_TipoUsuario_id"
 
 end

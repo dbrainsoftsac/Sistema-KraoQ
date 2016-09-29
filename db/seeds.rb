@@ -1,17 +1,25 @@
+TipoProduct.delete_all
+TipoProduct.create! id: 1, no_tipo_producto: "Piqueos"
+TipoProduct.create! id: 2, no_tipo_producto: "Piqueos criollos" 
+TipoProduct.create! id: 3, no_tipo_producto: "Bebidas espirituosas"
+TipoProduct.create! id: 4, no_tipo_producto: "Whiskys"
+TipoProduct.create! id: 5, no_tipo_producto: "Cervezas"
+TipoProduct.create! id: 6, no_tipo_producto: "Pizzas"
+
 Product.delete_all
-Product.create! id: 1, name: "Whisky Etiqueta roja", price: 150.49, active: true
-Product.create! id: 2, name: "Appleton", price: 220.29, active: true
-Product.create! id: 3, name: "Piqueo 3 sabores", price: 21.99, active: true
-Product.create! id: 4, name: "Cerveza Qusqueña", price: 15.99, active: true
-Product.create! id: 5, name: "Cerveza Pilsen", price: 15.99, active: true
-Product.create! id: 6, name: "Cerveza Heineken", price: 18.99, active: true
-Product.create! id: 7, name: "Cerveza Corona", price: 20.99, active: true
-Product.create! id: 8, name: "Cerveza Stella Artois", price: 25.99, active: true
-Product.create! id: 9, name: "Pizza Grande", price: 39.99, active: true
-Product.create! id: 10, name: "Tequeños", price: 19.99, active: true
-Product.create! id: 11, name: "Hot Wings", price: 20.99, active: true
-Product.create! id: 12, name: "Nachos", price: 14.99, active: true
-Product.create! id: 13, name: "Causitas rellenas", price: 19.99, active: true
+Product.create! id: 1, name: "Whisky Etiqueta roja", price: 150.49, active: true, product_id:1
+Product.create! id: 2, name: "Appleton", price: 220.29, active: true , product_id:3
+Product.create! id: 3, name: "Piqueo 3 sabores", price: 21.99, active: true, product_id:5
+Product.create! id: 4, name: "Cerveza Qusqueña", price: 15.99, active: true, product_id:5
+Product.create! id: 5, name: "Cerveza Pilsen", price: 15.99, active: true, product_id:5
+Product.create! id: 6, name: "Cerveza Heineken", price: 18.99, active: true, product_id:5
+Product.create! id: 7, name: "Cerveza Corona", price: 20.99, active: true, product_id:5
+Product.create! id: 8, name: "Cerveza Stella Artois", price: 25.99, active: true, product_id:5
+Product.create! id: 9, name: "Pizza Grande", price: 39.99, active: true, product_id:6
+Product.create! id: 10, name: "Tequeños", price: 19.99, active: true, product_id:1
+Product.create! id: 11, name: "Hot Wings", price: 20.99, active: true, product_id:1
+Product.create! id: 12, name: "Nachos", price: 14.99, active: true, product_id:1
+Product.create! id: 13, name: "Causitas rellenas", price: 19.99, active: true, product_id:2
 
 OrderStatus.delete_all
 OrderStatus.create! id: 1, name: "In Progress"

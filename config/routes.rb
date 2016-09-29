@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'welcome/new'
+
+  get 'welcome/create'
+
+  resources :usuarios
+  resources :tipo_usuarios
   resources :tipo_productos
   resources :eventos
   resources :eventos
@@ -15,8 +21,16 @@ Rails.application.routes.draw do
   resources :songs
   resources :artists
   resources :tipo_usuarios
+
+  resources :welcome
+
+
   resources :products, only: [:index]
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy], defaults: { format: 'js' }
+  
   root to: "products#index"
+ 
+
+
 end
