@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <%= favicon_link_tag 'favicon.ico' %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,23 +59,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">KraoQ - Gestion</a>
+        <a class="navbar-brand" href="#">KraoQ</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-
-
-            <li><%= link_to "Tipo Usuario", tipo_usuarios_path  %></li>            
-            <li><%= link_to "Usuario", usuarios_path  %></li>            
-
-            <li><%= link_to "Locales", locals_path  %></li>            
-            <li><%= link_to "Salas", salas_path  %></li>            
-            <li><%= link_to "Eventos", eventos_path  %></li>
-            <li><%= link_to "Artistas", artists_path  %></li>            
-            <li><%= link_to "Canciones", songs_path  %></li>            
-
-            <li><%= link_to "Tipo Producto", tipo_productos_path  %></li>            
-            <li><%= link_to "Producto", products_path  %></li>               
-
+          <ul class="nav navbar-nav">  
 
           </ul>
         </div>

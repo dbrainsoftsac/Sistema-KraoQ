@@ -5,5 +5,6 @@ class WelcomeController < ApplicationController
   def create
   end
 
-  layout "_application_init"
+  #layout "_application_init"
+  layout "_autentication"
 end

@@ -6,6 +6,8 @@ class OrderItem < ActiveRecord::Base
   validate :product_present
   validate :order_present
 
+  validates :order_id, :uniqueness => { :scope => :product_id, :message => "Producto ya agregado." }
+
   before_save :finalize
 
   def unit_price
@@ -23,13 +25,13 @@ class OrderItem < ActiveRecord::Base
 private
   def product_present
     if product.nil?
-      errors.add(:product, "is not valid or is not active.")
+      errors.add(:product, "Producto no valido o ya no está activo.")
     end
   end
 
   def order_present
     if order.nil?
-      errors.add(:order, "is not a valid order.")
+      errors.add(:order, "Orden no valida.")
     end
   end
 
