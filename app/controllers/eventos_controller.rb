@@ -71,4 +71,7 @@ class EventosController < ApplicationController
     def evento_params
       params.require(:evento).permit(:no_evento, :Local_id, :fe_fecha_evento, :qt_capacidad, :tx_descripcion_evento)
     end
+
+    layout  "_application_adm"        #Layout Adm
+    
 end

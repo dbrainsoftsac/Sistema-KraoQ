@@ -71,4 +71,8 @@ class ArtistsController < ApplicationController
     def artist_params
       params.require(:artist).permit(:no_artista)
     end
+
+    layout  "_application_adm"        #Layout Adm
+
+    
 end

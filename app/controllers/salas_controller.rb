@@ -71,4 +71,7 @@ class SalasController < ApplicationController
     def sala_params
       params.require(:sala).permit(:Local_id, :no_sala, :qt_capacidad, :tx_sala_descripcion)
     end
+
+    layout  "_application_adm"        #Layout Adm
+    
 end

@@ -61,8 +61,15 @@ gem 'devise'
 
 gem 'devise-bootstrap-views'
 
+gem 'bootstrap-sass', '~> 3.2', '>= 3.3.7'
+
+gem 'autoprefixer-rails'
+
 # Admin Section Support
 
 gem 'rails_admin'
+
+gem 'annotate', '~> 2.7', '>= 2.7.1'
+
 
 

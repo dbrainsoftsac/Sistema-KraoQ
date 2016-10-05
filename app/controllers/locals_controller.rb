@@ -71,4 +71,7 @@ class LocalsController < ApplicationController
     def local_params
       params.require(:local).permit(:no_local, :tx_direccion, :tx_telefono, :tx_correo, :tx_descripcion, :co_administrador)
     end
+
+    layout  "_application_adm"        #Layout Adm
+    
 end

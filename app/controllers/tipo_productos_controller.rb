@@ -71,4 +71,7 @@ class TipoProductosController < ApplicationController
     def tipo_producto_params
       params.require(:tipo_producto).permit(:no_tipo_producto)
     end
+
+    layout  "_application_adm"        #Layout Adm
+    
 end

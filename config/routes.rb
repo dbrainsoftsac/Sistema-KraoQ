@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'inicio/new'
+
+  get 'inicio/create'
+
   resources :profiles
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
@@ -24,6 +28,7 @@ Rails.application.routes.draw do
   resources :songs
   resources :artists
   resources :tipo_usuarios
+  resources :users
 
   resources :welcome
 
@@ -32,7 +37,7 @@ Rails.application.routes.draw do
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy], defaults: { format: 'js' }
   
-  root to: "welcome#index"
+  root to: "inicio#index"
  
 
 

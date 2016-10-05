@@ -71,4 +71,7 @@ class SongsController < ApplicationController
     def song_params
       params.require(:song).permit(:artist_id, :no_cancion)
     end
+
+    layout  "_application_adm"        #Layout Adm
+    
 end
