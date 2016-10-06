@@ -29,6 +29,20 @@ gem 'less-rails'
 
 gem 'twitter-bootstrap-rails'
 
+# Simplified Form Management
+
+gem 'simple_form'
+
+# Authentication Support
+
+gem 'devise'
+
+gem 'devise-bootstrap-views'
+
+# Admin Section Support
+
+gem 'rails_admin'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
