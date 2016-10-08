@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Lista Songs</h1>
+<h1>Lista Canciones</h1>
 
 <div class="table-responsive">
   <table class="table table-striped table-bordered table-hover">
@@ -17,9 +17,9 @@
       <tr>
         <td><%= song.artist.no_artista %></td>
         <td><%= song.no_cancion %></td>
-        <td><%= link_to 'Show', song %></td>
-        <td><%= link_to 'Edit', edit_song_path(song) %></td>
-        <td><%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', song %></td>
+        <td><%= link_to 'Editar', edit_song_path(song) %></td>
+        <td><%= link_to 'Eliminar', song, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Song', new_song_path %>
+<%= link_to 'Nueva Canción', new_song_path %>

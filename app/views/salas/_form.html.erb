@@ -6,9 +6,9 @@
       <%= f.collection_select :Local_id, Local.order(:no_local), :id, :no_local, {prompt: "Selecione un local"}, {class: "form-control"} %>
 
 
-    <%= f.input :no_sala %>
-    <%= f.input :qt_capacidad %>
-    <%= f.input :tx_sala_descripcion %>
+    <%= f.input :no_sala , :required => 'required'  %>
+    <%= f.input :qt_capacidad , :required => 'required' %>
+    <%= f.input :tx_sala_descripcion, :required => 'required'  %>
   </div>
 
   <div class="form-actions">

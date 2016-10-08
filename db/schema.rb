@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161001202946) do
+ActiveRecord::Schema.define(version: 20161006015034) do
 
   create_table "artista", force: :cascade do |t|
     t.string   "no_artista"
@@ -45,6 +45,17 @@ ActiveRecord::Schema.define(version: 20161001202946) do
   end
 
   add_index "eventos", ["Local_id"], name: "index_eventos_on_Local_id"
+
+  create_table "items", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "price"
+    t.boolean  "active"
+    t.integer  "tipo_producto_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "items", ["tipo_producto_id"], name: "index_items_on_tipo_producto_id"
 
   create_table "locals", force: :cascade do |t|
     t.text     "no_local"
@@ -117,6 +128,7 @@ ActiveRecord::Schema.define(version: 20161001202946) do
     t.text     "tx_sala_descripcion"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.boolean  "fl_disponible"
   end
 
   add_index "salas", ["Local_id"], name: "index_salas_on_Local_id"
